@@ -24,10 +24,7 @@
     <div class="inputbox">   
     <label>First Name :</label>
     <input type="text" name="fname" value="<?=$form_data['fname']??''?> ">
-    <span><?php
-    if (isset($error['errorfname'])){
-        echo $error['errorfname'];
-    }
+    <span><?=$error['errorfname']??"";
     ?></span>
     </div>
     <div class="inputbox">
