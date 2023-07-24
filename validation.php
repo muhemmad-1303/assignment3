@@ -58,7 +58,7 @@
 
   if(empty($error)){
      $myfile=fopen("contact.csv","a");
-     $csvdata=array($fname,$lname,$email,$number,$message);
+     $csvdata=array($form_data['fname'],$form_data['lname'],$form_data['email'],$form_data['number'],$form_data['message']);
      $csvheader=array("Fisrt Name","Last Name","Email","Number","Message");
      if(filesize("contact.csv")==0){
         fputcsv($myfile,$csvheader);
