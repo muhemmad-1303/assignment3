@@ -23,7 +23,7 @@
         color: #66bfbf;
         font-family: Arial, Helvetica, sans-serif;
         width: 400px;
-        height: 40vh;
+        
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -39,4 +39,14 @@
         gap: 10px;
         
         
+    }
+    .nav{
+        position:absolute;
+        top: 5px;
+        right: 10px;
+    
+    }
+    
+    .nav img{
+        width: 50px;
     }

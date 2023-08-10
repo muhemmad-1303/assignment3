@@ -52,6 +52,7 @@
  session_start();
  $_SESSION['form_data']=$form_data;
  $_SESSION['form_error']=$error;
+ $_SESSION['start']=true;
  
 
 
@@ -63,16 +64,14 @@
      if(filesize("contact.csv")==0){
         fputcsv($myfile,$csvheader);
      }
-     flock($myfile,LOCK_EX);
      fputcsv($myfile,$csvdata);
-     flock($myfile,LOCK_UN);
      fclose($myfile);
-     header("location:success.php");
+     header("location:../pages/success.php");
   }
   else{
   
    //   header("location:contact.php?errorfname=".$errorfname."&errorlname=".$errorlname."&erroremail=".$erroremail."&errornumber=".$errornumber."&fname=".$fname."&email=".$email."&number=".$number."&message=".$message);
-    header("Location:contact.php");
+    header("Location:../pages/contact.php");
     
    
   }

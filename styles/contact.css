@@ -82,3 +82,13 @@ form textarea{
     margin-bottom: 0;
 }
 
+.nav{
+    position:absolute;
+    top: 5px;
+    right: 10px;
+
+}
+
+.nav img{
+    width: 50px;
+}
